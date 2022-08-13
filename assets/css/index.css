@@ -29,6 +29,11 @@ body {
     font-weight: 700 !important;
     padding-top: 30px;
     font-size: 15px;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.articleDesc {
+    color: var(--veryDarkGrayishBlue);
 }
 
 .authorDetails {
@@ -47,11 +52,13 @@ body {
 
 #authorName {
     font-weight: 700;
+    color: var(--veryDarkGrayishBlue);
 }
 
 #pubDate {
     font-weight: 500;
-    opacity: 60%;
+    opacity: 70%;
+    color: var(--veryDarkGrayishBlue);
 }
 
 .iconFill {
@@ -93,6 +100,7 @@ body {
 
     .authorDetails {
         margin-bottom: 20px;
+        font-size: 16px;
     }
 
 }
