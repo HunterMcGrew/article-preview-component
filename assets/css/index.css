@@ -1,7 +1,63 @@
+:root {
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+}
 
+body {
+    font-size: 13px;
+    background-color: var(--lightGrayishBlue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+}
 
+.myContainer {
+    background-color: white;
+    max-width: 800px;
+}
 
+#img1 {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
+.articleTitle {
+    font-weight: 700 !important;
+    padding-top: 30px;
+    font-size: 15px;
+}
+
+.authorDetails {
+    height: 65px;
+}
+
+.tooLong {
+    height: 75px;
+}
+
+#avatar {
+    height: 60%;
+    contain: content;
+}
+
+#authorName {
+    font-weight: 700;
+}
+
+#pubDate {
+    font-weight: 500;
+    opacity: 60%;
+}
+
+.iconFill {
+    background-color: var(--lightGrayishBlue);
+    width: 30px;
+    height: 30px;
+}
 
 .attribution { 
     font-size: 11px; 
@@ -10,4 +66,32 @@
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.hideForNow {
+    display: none;
+}
+
+
+@media screen and (min-width: 767px) {
+    #img1 {
+        width: 292px;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .articleTitle {
+        font-size: 20px;
+    }
+
+    .articleDesc {
+        font-size: 15px;
+    }
+
+    .authorDetails {
+        margin-bottom: 20px;
+    }
+
 }
