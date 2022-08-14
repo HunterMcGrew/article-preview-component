@@ -83,3 +83,17 @@ tweetBtn2.addEventListener("click", () => {
 pinBtn2.addEventListener("click", () => {
     closeShareMenu();
 })
+
+window.addEventListener("resize", () => {
+    checkWindow();
+    if (innerWindow <= 991) {
+        popout.style.display = "none";
+        authorDetails.style.display = "flex";
+        popoutDesktop.style.display = "none";
+    }
+    if (innerWindow >= 992) {
+        popout.style.display = "none";
+        popoutDesktop.style.display = "none";
+        authorDetails.style.display = "flex";
+    }
+})
