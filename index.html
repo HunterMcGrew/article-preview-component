@@ -16,17 +16,17 @@
   <title>Frontend Mentor | Article preview component</title>
 
 </head>
-<body class="d-flex align-items-center justify-content-center">
+<body class="d-flex align-items-center justify-content-center flex-column">
 
   <main class="row myContainer g-0 rounded-4 shadow mx-4">
 
-    <section class="articleImg col-12 col-md-5">
+    <section class="articleImg col-12 col-lg-5">
 
       <img src="./assets/images/drawers.jpg" id="img1" alt="green desk with pictures and a flower on it">
 
     </section>
 
-    <div class="container-fluid px-4 col-md-7">
+    <div class="container-fluid px-4 col-lg-7">
 
     <section class="articleTitle">
 
@@ -43,36 +43,95 @@
 
     </section>
 
-    <section class="row authorDetails">
+    <section class="row authorDetails" id="hideOnShare">
 
-      <div class="col-3 col-md-2 tooLong d-flex align-items-center " id="authorImg">
+      <div class="col-3 col-lg-2 tooLong d-flex align-items-center " id="authorImg">
         <img src="./assets/images/avatar-michelle.jpg" id="avatar" class="rounded-5" alt="authors headsets">
       </div>
 
-      <div class="col-6 col-md-7 tooLong d-flex align-items-center">
+      <div class="col-6 col-lg-7 tooLong d-flex align-items-center">
         <div class="d-flex flex-column">
           <span id="authorName">Michelle Appleton</span>
           <span id="pubDate">28 Jun 2020</span>
         </div>
       </div> 
 
-      <div class="col-3 col-md-3 tooLong d-flex align-items-center justify-content-center" id="share">
-        <div class="iconFill rounded-5 d-flex align-items-center justify-content-center">
-        <img src="./assets/images/icon-share.svg" id="shareIcon">
+      <div class="col-3 col-lg-3 tooLong d-flex align-items-center justify-content-center">
+        <div class="iconFill rounded-5 d-flex align-items-center justify-content-center" id="share">
+        <img src="./assets/images/icon-share.svg" alt="share button" id="shareIcon">
         </div>
+       
       </div>
 
     </section>
 
+            <!-- Only show when share button is clicked for mobile -->
+
+    <section class="row" id="popout">
+
+      <div class="col-3 col-lg-2 tooLong d-flex align-items-center moveLeft" id="authorImg">
+        <span class="letterSpacing shareTxt">    SHARE</span>
+      </div>
+        
+      <div class="col-6 col-lg-7 tooLong d-flex align-items-center letterSpacing">
+        <span>    &nbsp;</span>
+        <a href="https://facebook.com" target="_blank"><img class="icons" src="./assets/images/icon-facebook.svg" alt="facebook icon" id="fbBtn"></a>
+        <div class="iconSpacer"></div>
+        <a href="https://twitter.com" target="_blank"><img class="icons" src="./assets/images/icon-twitter.svg" alt="twitter icon" id="tweetBtn"></a>
+        <div class="iconSpacer"></div>
+        <a href="https://pinterest.com" target="_blank"><img class="icons" src="./assets/images/icon-pinterest.svg" alt="pinterest icon" id="pinBtn"></a>
+      </div> 
+        
+      <div class="col-3 col-lg-3 tooLong d-flex align-items-center justify-content-center" id="share">
+        <div class="iconFill rounded-5 d-flex align-items-center justify-content-center moveRight" id="share2">
+        <img src="./assets/images/icon-share.svg" alt="share button" id="shareIcon">
+        </div>
+               
+      </div>
+        
+    </section>
+
+    <!-- Only show when share button is clicked for desktop -->
+
+    <section class="row rounded-4 shadow" id="popoutDesktop">
+
+      <div class="col tooLong d-flex align-items-center moveLeft" id="authorImg">
+        <span class="letterSpacing shareTxt">    SHARE</span>
+      </div>
+        
+      <div class="col tooLong d-flex align-items-center letterSpacing">
+        <span>    &nbsp;</span>
+        <a href="https://facebook.com" target="_blank"><img class="icons" src="./assets/images/icon-facebook.svg" alt="facebook icon" id="fbBtn2"></a>
+        <div class="iconSpacer"></div>
+        <a href="https://twitter.com" target="_blank"><img class="icons" src="./assets/images/icon-twitter.svg" alt="twitter icon" id="tweetBtn2"></a>
+        <div class="iconSpacer"></div>
+        <a href="https://pinterest.com" target="_blank"><img class="icons" src="./assets/images/icon-pinterest.svg" alt="pinterest icon" id="pinBtn2"></a>
+      </div> 
+<!--         
+      <div class="col-3 col-md-3 tooLong d-flex align-items-center justify-content-center" id="share">
+        <div class="iconFill rounded-5 d-flex align-items-center justify-content-center moveRight" id="share2">
+        <img src="./assets/images/icon-share.svg" alt="share button" id="shareIcon">
+        </div> -->
+               
+      </div>
+
+      <!-- <div id="arrowThing">&nbsp;</div> -->
+
     </div>
+        
+    </section>
+
+ 
 
   </main>
 
   
   <div class="attribution hideForNow">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/HunterMcGrew" target="_blank">Hunter McGrew</a>.
   </div>
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

@@ -42,7 +42,7 @@ body {
 }
 
 .tooLong {
-    height: 75px;
+    height: 65px;
 }
 
 #avatar {
@@ -63,25 +63,111 @@ body {
 
 .iconFill {
     background-color: var(--lightGrayishBlue);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.iconFill:hover {
+    cursor: pointer;
 }
 
 .attribution { 
-    font-size: 11px; 
-    text-align: center; 
+    font-size: 12px; 
+    text-align: center;
+    margin-top: 25px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
-.hideForNow {
+/* Mobile Share Popout */
+
+#popout {
     display: none;
+    height: 65px;
+    background-color: var(--veryDarkGrayishBlue);
+    margin: 0px -24px -10px -24px;
+    border-radius: 0px 0px 15px 15px;
 }
 
+.shareTxt {
+    color: var(--grayishBlue);
 
-@media screen and (min-width: 767px) {
+}
+
+.letterSpacing {
+    letter-spacing: 4px;
+}
+
+.moveLeft {
+    position: relative;
+    left: 12px;
+}
+
+.moveRight {
+    position: relative;
+    right: 12px;
+}
+
+.icons {
+    height: 22px;
+    width: 22px;
+}
+
+.iconSpacer {
+    width: 20px;
+}
+
+/* Desktop Share Popout */
+
+#popoutDesktop {
+    display: none;
+    position: relative;
+    top: -140px;
+    left: 248px;
+    background-color: var(--veryDarkGrayishBlue);
+    padding: 0 25px 0 25px;
+    height: 50px;
+    width: 275px;
+    margin-bottom: -50px;
+}
+
+#popoutDesktop div {
+    height: 50px;
+}
+
+#popoutDesktop:after {
+    content: " ";
+    /* background-color: var(--veryDarkGrayishBlue); */
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 50px;
+    left: 130px;
+    /* border-radius: 5px; */
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--veryDarkGrayishBlue);
+}
+
+/* #arrowThing {
+    background-color: var(--veryDarkGrayishBlue);
+    position: relative;
+    width: 25px;
+    top: -390px;
+    left: 470px;
+    border-radius: 5px;
+    border: 10px solid var(--veryDarkGrayishBlue);
+} */
+
+/* .hideForNow {
+    display: none;
+} */
+
+
+@media screen and (min-width: 992px) {
     #img1 {
         width: 292px;
         height: 100%;
